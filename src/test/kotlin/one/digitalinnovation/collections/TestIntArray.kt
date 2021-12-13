@@ -1,3 +1,4 @@
+// As diversas maneiras de iterar um Array
 package one.digitalinnovation.collections
 
 fun main(){
