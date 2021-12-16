@@ -5,7 +5,7 @@ fun main(){
     val pedro = Funcionario("Pedro", 2000.0)
     val maria = Funcionario("Maria", 4000.0)
 
-    val funcionarios = listOf(joao, pedro, maria)
+    val funcionarios = listOf(maria, joao, pedro)
 
     // Itera e imprime cada item do array
     funcionarios.forEach { println(it) }
@@ -13,6 +13,13 @@ fun main(){
     println("----------------------------------------------")
     println("Método que buscará o funcionário chamado Maria dentro do array:")
     println(funcionarios.find { it.nome == "Maria" })
+
+    println("----------------------------------------------")
+    println("Método que ordenará a exibição dos funcionários pelo salário do menor para o maior")
+    funcionarios
+        .sortedBy { it.salario }
+        .forEach{(println(it))}
+
 
 }
 
